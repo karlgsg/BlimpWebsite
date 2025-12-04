@@ -53,8 +53,7 @@ const Hero = () => {
             size="lg"
             variant="outline"
             onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-            className="border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-heading font-semibold text-lg px-8 py-6 backdrop-blur-sm transition-smooth"
-          >
+className="border-2 border-[#FFD700] text-[#FFD700] hover:bg-[#FFD700]/10 font-heading font-semibold text-lg px-8 py-6 transition-smooth"          >
             Learn More
           </Button>
         </div>
