@@ -27,11 +27,6 @@ const Team = () => {
       role: "",
       description: "Mechatronics and AI Engineer, 4th Year",
     },
-    {
-      name: "Maya Johnson",
-      role: "Operations Manager",
-      description: "Engineering Management, 3rd Year",
-    },
   ];
 
   return (
