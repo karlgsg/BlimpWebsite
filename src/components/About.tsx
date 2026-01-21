@@ -1,4 +1,4 @@
-import { Zap, Wind, Target } from "lucide-react";
+import { Zap, Wind, Target, Github } from "lucide-react";
 
 const About = () => {
   const features = [
@@ -31,6 +31,17 @@ const About = () => {
             Our solar-powered autonomous blimp represents a breakthrough in sustainable aerospace technology, 
             combining renewable energy with cutting-edge autonomous systems.
           </p>
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://github.com/fosteb5/AeroDonkeys"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-purple text-primary-foreground px-5 py-3 font-semibold shadow-purple hover:opacity-90 transition-smooth"
+            >
+              <Github className="h-5 w-5" />
+              View GitHub Repo
+            </a>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
