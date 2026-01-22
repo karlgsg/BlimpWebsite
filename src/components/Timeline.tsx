@@ -34,7 +34,7 @@ const Timeline = () => {
     },
     {
       title: "First Flight",
-      date: "Q2 2026",
+      date: "01/03/2026",
       description: "Maiden flight demonstration and system validation",
       completed: false,
     },

@@ -135,8 +135,7 @@ const Contact = () => {
                   <h4 className="font-semibold text-primary mb-1">Location</h4>
                   <p className="text-muted-foreground">
                     Western Engineering<br />
-                    1151 Richmond St<br />
-                    London, ON N6A 5B9
+                    London, ON. N6A 5B9
                   </p>
                 </div>
               </div>

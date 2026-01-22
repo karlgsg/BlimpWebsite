@@ -1,4 +1,4 @@
-import { Zap, Wind, Target, Github } from "lucide-react";
+import { Zap, Wind, Target, Github, Compass } from "lucide-react";
 
 const About = () => {
   const features = [
@@ -65,22 +65,24 @@ const About = () => {
         </div>
 
         <div className="bg-card p-8 md:p-12 rounded-2xl shadow-card animate-fade-in-up">
-          <div className="max-w-4xl mx-auto">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-6">
-              Long-Term Vision
-            </h3>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Our project aims to demonstrate the viability of solar-powered autonomous flight for 
-                long-duration missions. By leveraging lightweight materials, efficient solar collection, 
-                and intelligent power management, we're creating a platform that can remain airborne 
-                for extended periods without traditional fuel sources.
-              </p>
-              <p>
-                This technology has applications in environmental monitoring, emergency communications, 
-                and research platforms. We're not just building a blimp—we're pioneering the future 
-                of sustainable aerospace engineering and inspiring the next generation of innovators.
-              </p>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+            <div className="md:col-span-1 flex justify-center md:justify-start">
+              <div className="w-32 h-32 rounded-2xl bg-gradient-purple flex items-center justify-center shadow-purple animate-float">
+                <Compass className="h-16 w-16 text-primary-foreground" />
+              </div>
+            </div>
+            <div className="md:col-span-2">
+              <h3 className="text-3xl font-heading font-bold text-primary mb-4">
+                Long-Term Vision
+              </h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Prove that solar-assisted autonomous flight can stay up for long durations without traditional fuel, using lightweight structure and smart power management.
+                </p>
+                <p>
+                  Apply it to real jobs: environmental monitoring, emergency comms, and research payloads. We share what works—build notes, code, and lessons—so others can build on it.
+                </p>
+              </div>
             </div>
           </div>
         </div>
