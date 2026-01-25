@@ -33,7 +33,7 @@ const About = () => {
           </p>
           <div className="mt-6 flex justify-center">
             <a
-              href="https://github.com/fosteb5/AeroDonkeys"
+              href="https://github.com/fosteb5/LiftLabs"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-purple text-primary-foreground px-5 py-3 font-semibold shadow-purple hover:opacity-90 transition-smooth"
