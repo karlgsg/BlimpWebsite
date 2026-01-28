@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       {/* Floating Animation Elements */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden hidden sm:block">
         <div className="absolute top-20 left-10 w-2 h-2 bg-accent rounded-full animate-float opacity-60" />
         <div className="absolute top-40 right-20 w-3 h-3 bg-accent rounded-full animate-float opacity-40" style={{ animationDelay: "1s" }} />
         <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-accent rounded-full animate-float opacity-50" style={{ animationDelay: "2s" }} />
@@ -53,7 +53,7 @@ const Hero = () => {
             size="lg"
             variant="outline"
             onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}
-            className="border-2 border-[#FFD700] text-[#FFD700] hover:bg-[#FFD700]/10 font-heading font-semibold text-lg px-8 py-6 transition-smooth animate-bounce"
+            className="border-2 border-[#FFD700] text-[#FFD700] hover:bg-[#FFD700]/10 font-heading font-semibold text-lg px-8 py-6 transition-smooth"
             style={{ animationDelay: "0.15s" }}
           >
             Project Gallery
