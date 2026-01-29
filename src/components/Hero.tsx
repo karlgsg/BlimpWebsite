@@ -53,7 +53,7 @@ const Hero = () => {
             size="lg"
             variant="outline"
             onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}
-            className="border-2 border-[#FFD700] text-[#FFD700] hover:bg-[#FFD700]/10 font-heading font-semibold text-lg px-8 py-6 transition-smooth"
+            className="border-2 border-accent/70 bg-card text-primary shadow-card hover:bg-accent/10 hover:text-accent hover:border-accent font-heading font-semibold text-lg px-8 py-6 transition-smooth"
             style={{ animationDelay: "0.15s" }}
           >
             Project Gallery

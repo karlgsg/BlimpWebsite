@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,12 +33,14 @@ const Footer = () => {
           {/* About */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center shadow-gold">
-                <span className="text-2xl font-heading font-bold text-accent-foreground">W</span>
-              </div>
+              <img
+                src={logo}
+                alt="LiftLabs logo"
+                className="h-20 w-20 object-contain drop-shadow-[0_0_14px_rgba(229,220,197,0.85)]"
+              />
               <div>
-                <div className="text-sm font-semibold">Western Engineering</div>
-                <div className="text-xs text-accent">Blimp Team</div>
+                <div className="text-sm font-semibold">LiftLabs</div>
+                <div className="text-xs text-accent">Autonomous Blimp Team</div>
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-4">

@@ -69,7 +69,7 @@ const Timeline = () => {
                 )}
               </div>
               <div className="bg-card p-6 rounded-xl shadow-card">
-                <div className="text-sm font-semibold text-accent mb-1">
+                <div className="text-sm font-semibold text-primary-foreground inline-block px-3 py-1 rounded-full bg-primary mb-2">
                   {milestone.date}
                 </div>
                 <h3 className="text-xl font-heading font-bold text-primary mb-2">
@@ -86,37 +86,39 @@ const Timeline = () => {
         {/* Desktop Timeline (Horizontal) */}
         <div className="hidden md:block relative">
           {/* Timeline Line */}
-          <div className="absolute top-8 left-0 right-0 h-0.5 bg-border" />
+          <div className="absolute top-8 left-0 right-0 h-0.5 bg-primary/25" />
           
           <div className="grid grid-cols-6 gap-4">
             {milestones.map((milestone, index) => (
               <div
                 key={index}
-                className="relative animate-fade-in-up"
+                className="relative group animate-fade-in-up focus-within:outline-none"
                 style={{ animationDelay: `${index * 0.1}s` }}
+                tabIndex={0}
               >
                 {/* Milestone Indicator */}
                 <div className="flex justify-center mb-4">
-                  <div className="relative">
+                  <div className="relative h-12 w-12 flex items-center justify-center">
+                    <div className="absolute inset-0 rounded-full bg-accent/10 blur-lg scale-0 group-hover:scale-100 group-focus-visible:scale-100 transition-smooth" />
                     {milestone.completed ? (
-                      <CheckCircle2 className="h-8 w-8 text-accent relative z-10 bg-secondary" />
+                      <CheckCircle2 className="h-8 w-8 text-accent relative z-10 bg-secondary rounded-full transition-smooth transform group-hover:scale-125 group-focus-visible:scale-125" />
                     ) : (
-                      <Circle className="h-8 w-8 text-muted-foreground relative z-10 bg-secondary" />
+                      <Circle className="h-8 w-8 text-muted-foreground relative z-10 bg-secondary rounded-full transition-smooth transform group-hover:scale-125 group-focus-visible:scale-125" />
                     )}
                   </div>
                 </div>
 
                 {/* Milestone Card */}
-                <div className={`bg-card p-6 rounded-xl shadow-card transition-smooth hover:shadow-purple ${
-                  milestone.completed ? 'border-2 border-accent/20' : 'border border-border'
+                <div className={`bg-card p-6 rounded-xl shadow-card transition-smooth transform will-change-transform group-hover:-translate-y-4 group-hover:scale-[1.15] group-hover:rotate-[-0.5deg] group-focus-visible:-translate-y-4 group-focus-visible:scale-[1.15] group-focus-visible:rotate-[-0.5deg] group-hover:shadow-[0_25px_70px_-12px_rgba(12,26,35,0.28)] group-focus-visible:shadow-[0_25px_70px_-12px_rgba(12,26,35,0.28)] ${
+                  milestone.completed ? 'border-2 border-primary/25' : 'border border-border'
                 }`}>
-                  <div className="text-xs font-semibold text-accent mb-2 text-center">
+                  <div className="text-xs font-semibold text-primary-foreground mb-2 text-center transition-smooth inline-block px-3 py-1 rounded-full bg-primary group-hover:bg-primary-dark group-focus-visible:bg-primary-dark group-hover:scale-105 group-focus-visible:scale-105">
                     {milestone.date}
                   </div>
-                  <h3 className="text-lg font-heading font-bold text-primary mb-2 text-center">
+                  <h3 className="text-lg font-heading font-bold text-primary mb-2 text-center transition-smooth group-hover:translate-y-[-2px] group-focus-visible:translate-y-[-2px]">
                     {milestone.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm text-center">
+                  <p className="text-muted-foreground text-sm text-center transition-smooth group-hover:translate-y-[-1px] group-focus-visible:translate-y-[-1px]">
                     {milestone.description}
                   </p>
                 </div>

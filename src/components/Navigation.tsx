@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,8 +54,16 @@ const Navigation = () => {
             onClick={() => scrollToSection("#home")}
             className="flex items-center space-x-3 group"
           >
-            <div className="w-12 h-12 rounded-full bg-gradient-purple flex items-center justify-center shadow-purple transition-smooth group-hover:scale-110">
-              <span className="text-2xl font-heading font-bold text-primary-foreground">L</span>
+            <div className="relative">
+              <img
+                src={logo}
+                alt="LiftLabs logo"
+                className={`h-24 w-24 object-contain transition-smooth group-hover:scale-105 ${
+                  isScrolled
+                    ? "drop-shadow-lg"
+                    : "drop-shadow-[0_0_14px_rgba(229,220,197,0.9)]"
+                }`}
+              />
             </div>
             <div className="hidden md:block">
               <div className={`text-sm font-semibold ${brandTextClass}`}>LiftLabs</div>
