@@ -23,7 +23,7 @@ const Team = () => {
     {
       name: "Foster Beard",
       role: "",
-      description: "Electrical and AI Engineering, 4rd Year",
+      description: "Electrical and AI Engineer, 4th Year",
       linkedin: "www.linkedin.com/in/fosterbeard/",
     },
     {
@@ -40,7 +40,7 @@ const Team = () => {
   };
 
   return (
-    <section id="team" className="py-24 bg-secondary">
+    <section id="team" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
@@ -59,7 +59,7 @@ const Team = () => {
               className="group animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-card rounded-2xl shadow-card hover:shadow-purple transition-smooth overflow-hidden">
+              <div className="bg-primary rounded-2xl shadow-card hover:shadow-purple transition-smooth overflow-hidden border border-primary-dark text-primary-foreground">
                 {/* Avatar Placeholder */}
                 <div className="relative h-64 bg-gradient-purple flex items-center justify-center overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark opacity-90" />
@@ -79,7 +79,7 @@ const Team = () => {
                 </div>
 
                 <div className="p-6">
-                  <p className="text-muted-foreground text-center mb-4">
+                  <p className="text-primary-foreground/85 text-center mb-4">
                     {member.description}
                   </p>
                   
@@ -89,7 +89,7 @@ const Team = () => {
                         href={formatLink(member.linkedin)}
                         target="_blank"
                         rel="noreferrer"
-                        className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth"
+                        className="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-accent-muted hover:text-accent-foreground transition-smooth"
                       >
                         <Linkedin className="h-5 w-5" />
                       </a>

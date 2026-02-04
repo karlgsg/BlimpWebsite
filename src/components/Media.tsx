@@ -12,7 +12,7 @@ const Media = () => {
   ];
 
   return (
-    <section id="media" className="py-24 bg-secondary">
+    <section id="media" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
@@ -28,31 +28,31 @@ const Media = () => {
           {updates.map((update, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl shadow-card hover:shadow-purple transition-smooth p-6 md:p-8 animate-fade-in-up"
+              className="bg-primary rounded-xl shadow-card hover:shadow-purple transition-smooth p-6 md:p-8 animate-fade-in-up border border-primary-dark text-primary-foreground"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex flex-col md:flex-row md:items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-purple flex items-center justify-center shadow-purple">
-                    <update.icon className="h-7 w-7 text-primary-foreground" />
+                  <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center shadow-purple">
+                    <update.icon className="h-7 w-7 text-accent-foreground" />
                   </div>
                 </div>
                 
                 <div className="flex-grow">
                   <div className="flex flex-wrap items-center gap-3 mb-3">
-                    <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
+                    <span className="px-3 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full">
                       {update.type}
                     </span>
-                    <span className="text-sm text-muted-foreground">
+                    <span className="text-sm text-primary-foreground/75">
                       {update.date}
                     </span>
                   </div>
                   
-                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-2">
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary-foreground mb-2">
                     {update.title}
                   </h3>
                   
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary-foreground/85 leading-relaxed">
                     {update.description}
                   </p>
                 </div>
@@ -62,11 +62,11 @@ const Media = () => {
         </div>
 
         <div className="mt-12 text-center animate-fade-in">
-          <p className="text-muted-foreground mb-4">
+          <p className="text-primary mb-4">
             Media inquiries and partnership opportunities welcome
           </p>
-          <div className="inline-block px-6 py-3 bg-card rounded-full shadow-card">
-            <p className="text-primary font-semibold">
+          <div className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-card border border-primary-dark">
+            <p className="text-primary-foreground font-semibold">
               More updates coming soon — follow our progress!
             </p>
           </div>

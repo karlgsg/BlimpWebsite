@@ -8,37 +8,37 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 43 38% 84%;           /* parchment */
-    --foreground: 212 36% 9%;           /* charcoal */
+    --background: 43 32% 90%;           /* lighter parchment */
+    --foreground: 212 36% 8%;           /* deeper charcoal */
 
-    --card: 43 38% 84%;
-    --card-foreground: 212 36% 9%;
+    --card: 43 32% 90%;
+    --card-foreground: 212 36% 8%;
 
-    --popover: 43 38% 84%;
-    --popover-foreground: 212 36% 9%;
+    --popover: 43 32% 90%;
+    --popover-foreground: 212 36% 8%;
 
     /* Plum primary for headings and surfaces */
-    --primary: 256 8% 39%;
-    --primary-foreground: 43 38% 96%;
-    --primary-light: 256 12% 48%;
-    --primary-dark: 256 10% 30%;
+    --primary: 256 12% 34%;
+    --primary-foreground: 43 38% 97%;
+    --primary-light: 256 14% 44%;
+    --primary-dark: 256 12% 26%;
 
     /* Aqua accent for CTAs and highlights */
     --accent: 196 84% 56%;
     --accent-foreground: 212 36% 9%;
     --accent-muted: 194 88% 66%;
 
-    --secondary: 43 28% 78%;
-    --secondary-foreground: 212 36% 9%;
+    --secondary: 43 24% 83%;
+    --secondary-foreground: 212 36% 8%;
 
-    --muted: 43 22% 75%;
-    --muted-foreground: 256 8% 32%;
+    --muted: 43 18% 75%;
+    --muted-foreground: 256 10% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 43 38% 96%;
 
-    --border: 256 12% 70%;
-    --input: 256 12% 70%;
+    --border: 256 12% 66%;
+    --input: 256 12% 66%;
     --ring: 196 84% 56%;
 
     --radius: 0.75rem;
@@ -51,7 +51,7 @@ All colors MUST be HSL.
     /* Shadows */
     --shadow-purple: 0 10px 40px -10px hsl(256 8% 39% / 0.35);
     --shadow-gold: 0 5px 25px -5px hsl(196 84% 56% / 0.35);
-    --shadow-card: 0 4px 20px -2px hsl(212 36% 9% / 0.08);
+    --shadow-card: 0 8px 28px -8px hsl(212 36% 9% / 0.12);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

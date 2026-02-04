@@ -34,14 +34,14 @@ const Timeline = () => {
     },
     {
       title: "First Flight",
-      date: "01/03/2026",
+      date: "2026/03/01",
       description: "Maiden flight demonstration and system validation",
       completed: false,
     },
   ];
 
   return (
-    <section id="timeline" className="py-24 bg-secondary">
+    <section id="timeline" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
@@ -68,14 +68,14 @@ const Timeline = () => {
                   <Circle className="h-6 w-6 text-muted-foreground" />
                 )}
               </div>
-              <div className="bg-card p-6 rounded-xl shadow-card">
-                <div className="text-sm font-semibold text-primary-foreground inline-block px-3 py-1 rounded-full bg-primary mb-2">
+              <div className="bg-primary p-6 rounded-xl shadow-card border border-primary-dark text-primary-foreground">
+                <div className="text-sm font-semibold text-primary-foreground inline-block px-3 py-1 rounded-full bg-primary-light mb-2">
                   {milestone.date}
                 </div>
-                <h3 className="text-xl font-heading font-bold text-primary mb-2">
+                <h3 className="text-xl font-heading font-bold text-primary-foreground mb-2">
                   {milestone.title}
                 </h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-primary-foreground/85 text-sm">
                   {milestone.description}
                 </p>
               </div>
@@ -109,16 +109,16 @@ const Timeline = () => {
                 </div>
 
                 {/* Milestone Card */}
-                <div className={`bg-card p-6 rounded-xl shadow-card transition-smooth transform will-change-transform group-hover:-translate-y-4 group-hover:scale-[1.15] group-hover:rotate-[-0.5deg] group-focus-visible:-translate-y-4 group-focus-visible:scale-[1.15] group-focus-visible:rotate-[-0.5deg] group-hover:shadow-[0_25px_70px_-12px_rgba(12,26,35,0.28)] group-focus-visible:shadow-[0_25px_70px_-12px_rgba(12,26,35,0.28)] ${
-                  milestone.completed ? 'border-2 border-primary/25' : 'border border-border'
+                <div className={`bg-primary p-6 rounded-xl shadow-card transition-smooth transform will-change-transform group-hover:-translate-y-4 group-hover:scale-[1.15] group-hover:rotate-[-0.5deg] group-focus-visible:-translate-y-4 group-focus-visible:scale-[1.15] group-focus-visible:rotate-[-0.5deg] group-hover:shadow-[0_25px_70px_-12px_rgba(12,26,35,0.28)] group-focus-visible:shadow-[0_25px_70px_-12px_rgba(12,26,35,0.28)] text-primary-foreground ${
+                  milestone.completed ? 'border-2 border-primary-dark' : 'border border-primary/30'
                 }`}>
-                  <div className="text-xs font-semibold text-primary-foreground mb-2 text-center transition-smooth inline-block px-3 py-1 rounded-full bg-primary group-hover:bg-primary-dark group-focus-visible:bg-primary-dark group-hover:scale-105 group-focus-visible:scale-105">
+                  <div className="text-xs font-semibold text-primary-foreground mb-2 text-center transition-smooth inline-block px-3 py-1 rounded-full bg-primary-light group-hover:bg-primary-dark group-focus-visible:bg-primary-dark group-hover:scale-105 group-focus-visible:scale-105">
                     {milestone.date}
                   </div>
-                  <h3 className="text-lg font-heading font-bold text-primary mb-2 text-center transition-smooth group-hover:translate-y-[-2px] group-focus-visible:translate-y-[-2px]">
+                  <h3 className="text-lg font-heading font-bold text-primary-foreground mb-2 text-center transition-smooth group-hover:translate-y-[-2px] group-focus-visible:translate-y-[-2px]">
                     {milestone.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm text-center transition-smooth group-hover:translate-y-[-1px] group-focus-visible:translate-y-[-1px]">
+                  <p className="text-primary-foreground/85 text-sm text-center transition-smooth group-hover:translate-y-[-1px] group-focus-visible:translate-y-[-1px]">
                     {milestone.description}
                   </p>
                 </div>

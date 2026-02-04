@@ -5,7 +5,7 @@ const Sponsorship = () => {
   const placements = [
     {
       title: "Blimp Banner Logo ",
-      description: "Logo on the envelope/gondola and on related products",
+      description: "Logo on the envelope and on related products",
     },
     {
       title: "Website Logo",
@@ -44,7 +44,7 @@ const Sponsorship = () => {
   };
 
   return (
-    <section id="sponsors" className="py-24 bg-background">
+    <section id="sponsors" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
@@ -57,7 +57,7 @@ const Sponsorship = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="bg-card border border-primary/10 rounded-2xl p-2 md:p-12 mb-12 shadow-card animate-scale-in">
+          <div className="bg-background border border-primary/15 rounded-2xl p-3 md:p-12 mb-12 shadow-card animate-scale-in">
             <h3 className="text-2xl font-heading font-bold text-primary mb-3">
               What you get
             </h3>
@@ -66,9 +66,9 @@ const Sponsorship = () => {
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {placements.map((placement, index) => (
-                <div key={index} className="rounded-xl bg-secondary p-4 border border-border">
-                  <h4 className="font-heading font-semibold text-primary mb-1">{placement.title}</h4>
-                  <p className="text-muted-foreground text-sm">{placement.description}</p>
+                <div key={index} className="rounded-xl bg-primary p-4 border border-primary-dark shadow-card text-primary-foreground">
+                  <h4 className="font-heading font-semibold text-primary-foreground mb-1">{placement.title}</h4>
+                  <p className="text-primary-foreground/85 text-sm">{placement.description}</p>
                 </div>
               ))}
             </div>
@@ -78,16 +78,16 @@ const Sponsorship = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-card p-6 rounded-xl shadow-card hover:shadow-purple transition-smooth animate-fade-in-up"
+                className="bg-primary p-6 rounded-xl shadow-card hover:shadow-purple transition-smooth animate-fade-in-up border border-primary-dark text-primary-foreground"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4">
-                  <benefit.icon className="h-6 w-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl bg-primary-dark flex items-center justify-center mb-4">
+                  <benefit.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
-                <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                <h4 className="text-lg font-heading font-bold text-primary-foreground mb-2">
                   {benefit.title}
                 </h4>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-primary-foreground/85 text-sm">
                   {benefit.description}
                 </p>
               </div>

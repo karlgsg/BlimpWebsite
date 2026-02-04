@@ -46,7 +46,7 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="py-24 bg-background">
+    <section id="gallery" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
@@ -62,17 +62,18 @@ const Gallery = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="group cursor-pointer animate-scale-in"
+              className="group cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => setSelectedImage(image.src)}
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-card hover:shadow-purple transition-smooth">
+              <div className="relative overflow-hidden rounded-2xl shadow-card hover:shadow-purple transition-transform duration-200 ease-out will-change-transform">
                 <img
                   src={image.src}
                   alt={image.title}
-                  className="w-full h-64 object-cover transition-smooth group-hover:scale-110"
+                  loading="lazy"
+                  className="w-full h-64 object-cover transition-transform duration-200 ease-out group-hover:scale-105 will-change-transform"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-out flex items-end">
                   <div className="p-6 w-full">
                     <h3 className="text-xl font-heading font-bold text-primary-foreground mb-2">
                       {image.title}

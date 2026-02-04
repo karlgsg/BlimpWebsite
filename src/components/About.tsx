@@ -48,34 +48,34 @@ const About = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-card p-8 rounded-xl shadow-card hover:shadow-purple transition-smooth animate-scale-in group"
+              className="bg-primary p-8 rounded-xl shadow-card hover:shadow-purple transition-smooth animate-scale-in group border border-primary-dark text-primary-foreground"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 rounded-2xl bg-gradient-purple flex items-center justify-center mb-6 shadow-purple group-hover:scale-110 transition-smooth">
-                <feature.icon className="h-8 w-8 text-primary-foreground" />
+              <div className="w-16 h-16 rounded-2xl bg-accent flex items-center justify-center mb-6 shadow-purple group-hover:scale-110 transition-smooth">
+                <feature.icon className="h-8 w-8 text-accent-foreground" />
               </div>
-              <h3 className="text-2xl font-heading font-bold text-primary mb-3">
+              <h3 className="text-2xl font-heading font-bold text-primary-foreground mb-3">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-primary-foreground/80 leading-relaxed">
                 {feature.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="bg-card p-8 md:p-12 rounded-2xl shadow-card animate-fade-in-up">
+        <div className="bg-primary p-8 md:p-12 rounded-2xl shadow-card animate-fade-in-up border border-primary-dark text-primary-foreground">
           <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1 flex justify-center md:justify-start">
-              <div className="w-32 h-32 rounded-2xl bg-gradient-purple flex items-center justify-center shadow-purple animate-float">
-                <Compass className="h-16 w-16 text-primary-foreground" />
+              <div className="w-32 h-32 rounded-2xl bg-accent flex items-center justify-center shadow-purple animate-float">
+                <Compass className="h-16 w-16 text-accent-foreground" />
               </div>
             </div>
             <div className="md:col-span-2">
-              <h3 className="text-3xl font-heading font-bold text-primary mb-4">
+              <h3 className="text-3xl font-heading font-bold text-primary-foreground mb-4">
                 Long-Term Vision
               </h3>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <div className="space-y-4 text-primary-foreground/85 leading-relaxed">
                 <p>
                   Prove that solar-assisted autonomous flight can stay up for long durations without traditional fuel, using lightweight structure and smart power management.
                 </p>

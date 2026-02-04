@@ -20,7 +20,7 @@ const Mission = () => {
   ];
 
   return (
-    <section id="mission" className="py-24 bg-background">
+    <section id="mission" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
@@ -40,14 +40,14 @@ const Mission = () => {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="absolute inset-0 bg-gradient-purple-gold rounded-2xl opacity-0 group-hover:opacity-100 transition-smooth blur-xl" />
-              <div className="relative bg-card p-8 rounded-2xl shadow-card hover:shadow-purple transition-smooth border-2 border-transparent group-hover:border-accent/20">
-                <div className="w-16 h-16 rounded-2xl bg-secondary flex items-center justify-center mb-6 group-hover:bg-gradient-purple transition-smooth">
-                  <value.icon className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-smooth" />
+              <div className="relative bg-primary p-8 rounded-2xl shadow-card hover:shadow-purple transition-smooth border-2 border-primary-dark group-hover:border-accent/35 text-primary-foreground">
+                <div className="w-16 h-16 rounded-2xl bg-primary-dark flex items-center justify-center mb-6 group-hover:bg-accent transition-smooth">
+                  <value.icon className="h-8 w-8 text-primary-foreground group-hover:text-accent-foreground transition-smooth" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-primary mb-4">
+                <h3 className="text-2xl font-heading font-bold text-primary-foreground mb-4">
                   {value.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-primary-foreground/85 leading-relaxed">
                   {value.description}
                 </p>
               </div>

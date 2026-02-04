@@ -83,7 +83,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-background">
+    <section id="contact" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
@@ -97,51 +97,51 @@ const Contact = () => {
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className="animate-slide-in-right">
-            <h3 className="text-2xl font-heading font-bold text-primary mb-6">
-              Contact Information
-            </h3>
+            <div className="animate-slide-in-right">
+              <h3 className="text-2xl font-heading font-bold text-primary mb-6">
+                Contact Information
+              </h3>
             
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mr-4 flex-shrink-0">
-                  <Mail className="h-6 w-6 text-primary" />
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mr-4 flex-shrink-0 shadow-card">
+                    <Mail className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">Email</h4>
+                    <a href="mailto:kbrand9@uwo.ca" className="text-primary font-semibold hover:text-accent transition-smooth">
+                      kbrand9@uwo.ca
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Email</h4>
-                  <a href="mailto:kbrand9@uwo.ca" className="text-muted-foreground hover:text-primary transition-smooth">
-                    kbrand9@uwo.ca
-                  </a>
+
+                <div className="flex items-start">
+                  <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mr-4 flex-shrink-0 shadow-card">
+                    <Phone className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">Phone</h4>
+                    <a href="tel:+15196611234" className="text-primary font-semibold hover:text-accent transition-smooth">
+                      (587) 586-5850
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mr-4 flex-shrink-0 shadow-card">
+                    <MapPin className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">Location</h4>
+                    <p className="text-primary font-semibold">
+                      Western Engineering<br />
+                      London, ON. N6A 5B9
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mr-4 flex-shrink-0">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Phone</h4>
-                  <a href="tel:+15196611234" className="text-muted-foreground hover:text-primary transition-smooth">
-                    (587) 586-5850
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mr-4 flex-shrink-0">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Location</h4>
-                  <p className="text-muted-foreground">
-                    Western Engineering<br />
-                    London, ON. N6A 5B9
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 p-6 bg-gradient-purple rounded-xl shadow-purple">
+            <div className="mt-8 p-6 bg-primary rounded-xl shadow-purple border border-primary-dark">
               <p className="text-primary-foreground font-semibold mb-2">
                 For Sponsorship Inquiries
               </p>
