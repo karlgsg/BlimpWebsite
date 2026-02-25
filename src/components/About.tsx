@@ -36,6 +36,8 @@ const About = () => {
               href="https://github.com/fosteb5/LiftLabs"
               target="_blank"
               rel="noreferrer"
+              aria-label="Open LiftLabs GitHub repository in a new tab"
+              title="LiftLabs GitHub repository"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-purple text-primary-foreground px-5 py-3 font-semibold shadow-purple hover:opacity-90 transition-smooth"
             >
               <Github className="h-5 w-5" />
@@ -80,7 +82,7 @@ const About = () => {
                   Prove that solar-assisted autonomous flight can stay up for long durations without traditional fuel, using lightweight structure and smart power management.
                 </p>
                 <p>
-                  Apply it to real jobs: environmental monitoring, emergency comms, and research payloads. We share what works—build notes, code, and lessons—so others can build on it.
+                  Apply it to real jobs: environmental monitoring, emergency comms, and research payloads. We share what works so others can build on it.
                 </p>
               </div>
             </div>

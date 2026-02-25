@@ -62,7 +62,7 @@ const Sponsorship = () => {
               What you get
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Clear placements and proof—no vague promises. You approve artwork before it’s printed.
+              Clear placements and proof with no vague promises. You approve artwork before it’s printed.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {placements.map((placement, index) => (

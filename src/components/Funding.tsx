@@ -56,7 +56,7 @@ const Funding = () => {
 
           <div className="bg-primary-foreground/5 backdrop-blur-sm rounded-xl p-8 border-2 border-accent/30 animate-fade-in-up">
             <p className="text-primary-foreground/90 italic text-lg">
-              "This funding represents more than financial support—it's validation of our vision to create 
+              "This funding represents more than financial support. It's validation of our vision to create 
               sustainable aerospace solutions and inspiration to push the boundaries of what's possible 
               in student-led engineering innovation."
             </p>

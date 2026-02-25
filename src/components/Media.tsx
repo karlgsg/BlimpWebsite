@@ -67,7 +67,7 @@ const Media = () => {
           </p>
           <div className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-card border border-primary-dark">
             <p className="text-primary-foreground font-semibold">
-              More updates coming soon — follow our progress!
+              More updates coming soon. Follow our progress!
             </p>
           </div>
         </div>

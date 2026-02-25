@@ -89,6 +89,8 @@ const Team = () => {
                         href={formatLink(member.linkedin)}
                         target="_blank"
                         rel="noreferrer"
+                        aria-label={`Open ${member.name}'s LinkedIn profile in a new tab`}
+                        title={`${member.name} on LinkedIn`}
                         className="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-accent-muted hover:text-accent-foreground transition-smooth"
                       >
                         <Linkedin className="h-5 w-5" />

@@ -1,0 +1,21 @@
+{
+  "name": "LiftLabs",
+  "short_name": "LiftLabs",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#e5dcc5",
+  "theme_color": "#615d6c",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "640x353",
+      "type": "image/png"
+    }
+  ]
+}

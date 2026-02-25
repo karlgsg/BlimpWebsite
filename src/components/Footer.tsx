@@ -49,7 +49,14 @@ const Footer = () => {
               renewable energy in flight.
             </p>
             <div className="flex space-x-3">
-              <a href="https://github.com/fosteb5/LiftLabs" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-smooth">
+              <a
+                href="https://github.com/fosteb5/LiftLabs"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open LiftLabs GitHub repository in a new tab"
+                title="LiftLabs GitHub repository"
+                className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-smooth"
+              >
                 <Github className="h-4 w-4" />
               </a>
             </div>
