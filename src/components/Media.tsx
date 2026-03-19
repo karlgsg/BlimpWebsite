@@ -1,7 +1,14 @@
-import { Newspaper, Calendar, Award } from "lucide-react";
+import { Award } from "lucide-react";
 
 const Media = () => {
   const updates = [
+    {
+      icon: Award,
+      title: "Second Round of Funding Secured",
+      date: "March 2026",
+      description: "LiftLabs receives a second round of funding to accelerate prototype refinement, testing, and flight readiness.",
+      type: "Funding",
+    },
     {
       icon: Award,
       title: "Innovation Fund Award",
